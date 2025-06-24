@@ -28,7 +28,7 @@ This project demonstrates how to deploy a scalable, modular two-tier web applica
 | **Volatile data storage**         | Configured **PersistentVolumeClaims (PVCs)** to ensure MySQL data persists across pod restarts and is decoupled from containers. |
 
 
-🔧 DevOps Skills Demonstrated
+# DevOps Skills Demonstrated
 Container orchestration: Running and scaling containers via Kubernetes
 
 Declarative Infrastructure: Managing deployments using YAML
@@ -41,7 +41,7 @@ Troubleshooting: Diagnosing pod failures (ImagePullBackOff, etc.)
 
 CI/CD potential: The YAML structure is CI/CD-ready (GitHub Actions or Jenkins integration)
 
-✅ Real-World Relevance
+# Real-World Relevance
 This kind of setup mimics what DevOps engineers do in the real world for:
 
 Deploying CMS platforms
