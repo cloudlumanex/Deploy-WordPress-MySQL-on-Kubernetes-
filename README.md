@@ -16,6 +16,42 @@ This project demonstrates how to deploy a scalable, modular two-tier web applica
 - `kustomization.yaml`: Kustomize overlay
 
 
+## 🔧 Key Problems Solved by the Project
+
+| Problem                        | Solution                                                                                     |
+|-------------------------------|----------------------------------------------------------------------------------------------|
+| **Multi-tier application setup**  | Used Kubernetes Deployments and Services to orchestrate the frontend (WordPress) and backend (MySQL) containers. |
+| **Manual and inconsistent setup** | Defined infrastructure using version-controlled YAML manifests, enabling reproducibility and automation. |
+| **Lack of application portability** | Containerized both WordPress and MySQL, ensuring consistent behavior across local, cloud, and CI/CD environments. |
+| **Configuration complexity**       | Leveraged **Kustomize** to organize, customize, and manage Kubernetes resources without duplicating YAML files. |
+| **Local development constraints** | Used **Minikube** to simulate a cloud-like Kubernetes environment for local development and testing. |
+| **Volatile data storage**         | Configured **PersistentVolumeClaims (PVCs)** to ensure MySQL data persists across pod restarts and is decoupled from containers. |
+
+
+🔧 DevOps Skills Demonstrated
+Container orchestration: Running and scaling containers via Kubernetes
+
+Declarative Infrastructure: Managing deployments using YAML
+
+Service exposure: Exposing apps using NodePort or minikube service
+
+Resource management: Using Kustomize to manage layered manifests
+
+Troubleshooting: Diagnosing pod failures (ImagePullBackOff, etc.)
+
+CI/CD potential: The YAML structure is CI/CD-ready (GitHub Actions or Jenkins integration)
+
+✅ Real-World Relevance
+This kind of setup mimics what DevOps engineers do in the real world for:
+
+Deploying CMS platforms
+
+Migrating legacy apps to Kubernetes
+
+Automating infrastructure with IaC
+
+Building development and testing environments quickly
+
 
 
 ![Image](https://github.com/user-attachments/assets/8b67a67b-6266-463b-b21c-4d1ce3ca50b9)
